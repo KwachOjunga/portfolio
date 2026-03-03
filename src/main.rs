@@ -1,5 +1,6 @@
 use leptos::prelude::*;
 use portfolio::App;
+use portfolio::components::about::About;
 
 fn main() {
     // set up logging
@@ -9,6 +10,7 @@ fn main() {
     mount_to_body(|| {
         view! {
             <App />
+            <About />
         }
     })
 }

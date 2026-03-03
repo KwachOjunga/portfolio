@@ -3,10 +3,11 @@ use leptos_meta::*;
 use leptos_router::{components::*, path};
 
 // Modules
-mod components;
+pub mod components;
 mod pages;
 
 // Top-Level pages
+pub use crate::components::about::About;
 use crate::pages::home::Home;
 
 /// An app router which renders the homepage and handles 404's
