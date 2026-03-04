@@ -9,11 +9,11 @@ pub fn About() -> impl IntoView {
                     About Me
                 </h2>
                 <p class="text-xl text-center max-w-2xl mx-auto">
-                    A passionate systems engineer with a background in medical
-                    image classification using deep learning&apos;s U-net
+                    "A passionate systems engineer with a background in medical
+                    image classification using deep learning's U-net
                     architectures and a solid foundation in low level system
                     design focusing on the hardware/software interface while
-                    pursuing a degree in Medical Engineering.
+                    pursuing a degree in Medical Engineering."
                 </p>
             </div>
 
