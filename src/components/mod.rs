@@ -1,2 +1,6 @@
 pub mod about;
-pub mod counter_btn;
+pub mod contacts;
+pub mod header;
+pub mod hero;
+pub mod projects;
+pub mod skills;
