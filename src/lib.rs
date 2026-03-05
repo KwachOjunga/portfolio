@@ -1,8 +1,8 @@
 use leptos::prelude::*;
 use leptos_meta::*;
 use leptos_router::{components::*, path};
-use leptos_theme::types::Theme;
-use leptos_theme::{ThemeProvider, use_theme};
+// use leptos_theme::types::Theme;
+use leptos_theme::ThemeProvider;
 // Modules
 pub mod components;
 mod pages;
@@ -18,22 +18,21 @@ pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
-         <ThemeProvider enable_system=true>
-        <Html attr:lang="en" attr:dir="ltr" attr:data-theme="dark" />
+         <ThemeProvider>
+            <Html attr:lang="en" attr:dir="ltr" attr:data-theme="dark" />
 
-        // sets the document title
-        <Title text="Reginald Ojunga| Compiler Engineer" />
+            // sets the document title
+            <Title text="Reginald Ojunga| Compiler Engineer" />
 
-        // injects metadata in the <head> of the page
-        <Meta charset="UTF-8" />
-        <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            // injects metadata in the <head> of the page
+            <Meta charset="UTF-8" />
+            <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-        <Router>
-            <Routes fallback=|| view! { NotFound }>
-                <Route path=path!("") view=Home />
-            </Routes>
-        </Router>
+            <Router>
+                <Routes fallback=|| view! { NotFound }>
+                    <Route path=path!("") view=Home />
+                </Routes>
+            </Router>
         </ThemeProvider>
     }
 }

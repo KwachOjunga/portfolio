@@ -11,10 +11,8 @@ fn main() {
     mount_to_body(|| {
         view! {
             <ThemeProvider>
-            <App />
+                <App />
             </ThemeProvider>
-            // <About />
-            // <Contacts />
         }
     })
 }
