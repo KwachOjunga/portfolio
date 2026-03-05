@@ -12,6 +12,7 @@ leptos_router = { version = "0.8", features = ["nightly"] }
 console_log = "1"
 log = "0.4"
 console_error_panic_hook = "0.1"
+leptos_theme = { git = "https://github.com/KwachOjunga/leptos-theme.git", version = "0.1.2" }
 
 # utils
 # strum = { version = "0.25", features = ["derive", "strum_macros"] }

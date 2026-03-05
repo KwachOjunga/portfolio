@@ -210,6 +210,7 @@ pub fn Contacts() -> impl IntoView {
 
                                     view! {
                                         {link.view()}
+                                        <br />
 
                                     }
                                 }
