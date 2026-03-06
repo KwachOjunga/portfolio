@@ -28,8 +28,8 @@ pub fn Home() -> impl IntoView {
                 </ul>
             }
         }>
-        <main class="font-robotomono min-h-screen flex flex-col items-center justify-around bg-[#fdfdfd] text-black dark:bg-[#0a0a0a] dark:text-white w-full">
         <Header />
+        <main class=" min-h-screen flex flex-col items-center justify-around bg-[#fdfdfd] text-black dark:bg-[#0a0a0a] dark:text-white w-full">
         <Hero />
         <About />
         <Contacts />
