@@ -9,8 +9,7 @@ use leptos::prelude::*;
 #[component]
 pub fn Home() -> impl IntoView {
     view! {
-
-        // <main class="font-robotomono min-h-screen flex flex-col items-center justify-around bg-[#fdfdfd] dark:bg-[#0a0a0a] dark:text-white w-full">
+        // bg-[#fdfdfd] text-black dark:bg-[#0a0a0a] dark:text-white
         <ErrorBoundary fallback=|errors| {
             view! {
                 <h1>"Uh oh! Something went wrong!"</h1>
@@ -29,7 +28,7 @@ pub fn Home() -> impl IntoView {
                 </ul>
             }
         }>
-        <main class="font-robotomono min-h-screen flex flex-col items-center justify-around bg-[#fdfdfd] dark:bg-[#0a0a0a] dark:text-white w-full">
+        <main class="font-robotomono min-h-screen flex flex-col items-center justify-around bg-[#fdfdfd] text-black dark:bg-[#0a0a0a] dark:text-white w-full">
         <Header />
         <Hero />
         <About />
