@@ -1,5 +1,5 @@
 use leptos::prelude::*;
-use leptos_image::*;
+// use leptos_image::*;
 
 #[component]
 pub fn Hero() -> impl IntoView {
@@ -40,7 +40,7 @@ pub fn Hero() -> impl IntoView {
                     <a
                         href="#contact"
                         class="px-8 py-3 border text-secondary rounded transition-all duration-200 hover:opacity-90"
-                        style={{ borderColor: "var(--color-secondary)" }}
+                        style="borderColor: var(--color-secondary);"
                     >
                         Get In Touch
                     </a>
@@ -60,12 +60,12 @@ pub fn Hero() -> impl IntoView {
                             className="rounded-lg shadow-lg"
                         />*/}
 
-                        <Image
+                        <img
                             src="https://nirzak-streak-stats.vercel.app/?user=KwachOjunga&theme=dark&hide_border=false"
                             alt="KwachOjunga's Contribution Streak"
                             width={495}
                             height={195}
-                            classNme="rounded-lg shadow-lg"
+                            class="rounded-lg shadow-lg"
                         />
 
                         {/*<Image

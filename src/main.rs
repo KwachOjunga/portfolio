@@ -1,8 +1,5 @@
 use leptos::prelude::*;
-use leptos_theme::ThemeProvider;
 use portfolio::App;
-// use portfolio::components::about::About;
-// use portfolio::components::contacts::Contacts;
 fn main() {
     // set up logging
     _ = console_log::init_with_level(log::Level::Debug);
@@ -10,9 +7,7 @@ fn main() {
 
     mount_to_body(|| {
         view! {
-            <ThemeProvider>
                 <App />
-            </ThemeProvider>
         }
     })
 }
